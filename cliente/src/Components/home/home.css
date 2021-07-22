@@ -1,0 +1,82 @@
+.general{
+    text-align: center;
+    background-image: url("../../img/6519600523_c06df613d8_b.jpg");
+    background-size: cover;
+    padding-top: 20px;
+    
+}
+.container_search{
+/* background-color: rgba(195, 195, 219, 0.288); */
+columns: 4;
+margin:auto;
+margin-top: 30px;
+flex-direction: row;
+width: 95%;
+min-height: 1000px;
+}
+.card_search{
+    border: 1px solid black;
+    max-width: 250px;
+    min-height: 400px;
+    max-height: 600px;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 10px;
+    background-color: rgba(183, 180, 201, 0.842);
+
+    justify-content: center;
+
+}
+
+.sub_cont1{
+    
+    width: 100%;
+    height: 170px;
+    justify-content: center;
+    
+
+}
+
+.sub_cont2{
+    margin: auto;
+    text-align: center;
+    
+    width: 98%;
+    height: 200px;
+    
+}
+.name_card{
+    
+    width: 100%;
+    min-height: 40px;
+    max-height: 70px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+
+}
+
+.image_search{
+    margin: auto;
+    margin-top: 5px;
+    width: 80%;
+    height: 155px;
+    border: solid 1px black;
+    background-image: url('../../img/prueba.jpg');
+   }
+
+h6 {
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+margin-bottom: -22px;
+}
+
+.err{
+    text-align: center;
+    color: rgba(207, 47, 47, 0.829);
+    display: flex;
+    justify-content: center;
+    
+}
+.form_search{
+    text-align: center;    
+    width: 100%;
+}
