@@ -4,10 +4,11 @@ const { API_KEY } = process.env;
 
 function prueba(req, res, next) {
  const City= req.query.location
- console.log(City)
+ const offset= parseInt(req.query.offset)
+ console.log(offset)
   axios
     .get(
-      `https://api.yelp.com/v3/businesses/search?location=${City}&limit=50&categories=parking`,
+      `https://api.yelp.com/v3/businesses/search?location=${City}&categories=parking&limit=8&offset=${offset}`,
       // `https://api.yelp.com/v3/businesses/matches?location=ny&categories=parking`,
       {
         headers: {
