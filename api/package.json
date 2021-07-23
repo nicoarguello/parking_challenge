@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -w ./tests/**/*.spec.js",
-    "start": "nodemon",
+    "start": "nodemon -L",
     "dev": "nodemon index.js"
-   
   },
   "author": "Nico",
   "license": "ISC",
@@ -25,12 +24,12 @@
     "ioredis": "^4.27.6",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
     "sequelize": "^6.6.5"
   },
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^8.4.0",
-    "nodemon": "^2.0.12",
     "supertest": "^6.0.1",
     "supertest-session": "^4.1.0"
   }
