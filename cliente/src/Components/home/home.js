@@ -2,7 +2,8 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { next, previous, search } from "../redux/actions";
 import { useForm } from "react-hook-form";
-import { FaBeer, FaStar } from 'react-icons/fa';
+import { FaBeer, FaStar, FaCar } from 'react-icons/fa';
+import ReactStars from 'react-rating-stars-component'
 import "../../img/alternativa.jpg";
 import "./home.css";
 
@@ -26,7 +27,7 @@ const Home = () => {
 
   return (
     <div className="general">
-      <h1>PARKING APP <FaBeer /> </h1>
+      <h1><FaCar /> PARKING APP <FaCar /> </h1>
 
       <form className="form_search" onSubmit={handleSubmit(submit)}>
         <input
@@ -61,14 +62,14 @@ const Home = () => {
             </div>
             <div className="sub_cont2">
               <h5 className="name_card">{item.name}</h5>
+              <span className='star'>
+                <ReactStars className='star' value={item.rating} />
+              </span>
               <h6>
                 City: <span>{item.city}</span>
               </h6>
               <h6>
                 Address: <span>{item.address}</span>
-              </h6>
-              <h6>
-                Rating: <FaStar /> <span>{item.rating}</span>{" "}
               </h6>
               <h6>
                 Review Count: <span>{item.review_count}</span>
@@ -78,6 +79,7 @@ const Home = () => {
               </h6>
               <a href={item.url}>
                 <h6>url yelp</h6>
+              
               </a>
             </div>
           </div>

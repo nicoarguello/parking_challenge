@@ -105,3 +105,9 @@ h6 {
   width: 50%;
   padding-bottom: 20px;
 }
+
+.star {
+  display: flex;
+  margin-left: 38%;
+  width: 50%;
+}
